@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <style>
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 500px;
+    background-color: #DAD1CF;
+    padding-left:50px ;
+    padding-right: 60px;
+
+}
+.div1{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding-left: 80px;
+    padding-right: 50px;
+    width: 90%;
+    height: 300px;
+    background-color:#7E7D7D;
+    padding-top: 120px;
+    border-radius: 5px;
+    margin-top: 10px;
+
+
+}
+.div2{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 90%;
+    height: 300px;
+    padding-top: 120px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #877673;
+    border-radius: 5px;
+
+    
+}
+.div3{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 90%;
+    height: 300px;
+    padding-left: 50px;
+    padding-right: 50px;
+   background-color:  #ADABAA;
+   padding-top: 120px;
+   border-radius: 5px;
+}
+.img{
+    width: 200px;
+    height: 200px;
+}
+
+@media screen and (max-width: 992px) {
+        .container {
+          flex-direction: column;
+          height: auto;
+        }
+
+        .div1{
+            flex-direction: column;
+          height:auto; 
+        }
+        .div2{
+          flex-direction: column;
+          height:auto; 
+        }
+        .div3{
+        flex-direction: column;
+          height:auto; 
+        }
+      }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="div1">
+                <img class="img" style="position:absolute;top:70px;left:180px;"src="https://www.opc-router.de/wp-content/uploads/2021/03/mongodb_thumbnail.png">
+                <p class="p" style="position:absolute;top:250px;left:150px ;width:270px;">MongoDB is a non-relational document database that provides support for JSON-like storage. The MongoDB database has a flexible data model that enables you to store unstructured data, and it provides full indexing support, and replication with rich and intuitive APIs.</p>
+            </div>
+            <div class="div2">
+                <img src="https://miro.medium.com/max/960/1*X7a7F-yXRUAGLGLzdlGQMA.png" style="width:200px;position: absolute;top:100px;left:570px;"> 
+                <p class="p1"style="position:absolute;top:230px;left:550px ;width:270px;">Node.js (Node) is an open source development platform for executing JavaScript code server-side. Node is useful for developing applications that require a persistent connection from the browser to the server and is often used for real-time applications such as chat, news feeds and web push notifications.</p>
+            </div>
+            <div class="div3">
+                <img src="https://angular.io/assets/images/logos/angular/shield-large.svg" style="width:180px;height:120px;position: absolute;top:100px;left:970px;">
+                <p style="width:200px;height:120px;position: absolute;top:240px;left:970px;">
+                    Angular is a TypeScript-based free and open-source web application framework led by the Angular Team at Google and by a community of individuals and corporations
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

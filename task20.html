@@ -1,0 +1,176 @@
+<html>
+  <head>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       justify-content: center;
+        width: 500px;
+        height: 100%;
+   
+       
+      }
+
+      .input-field {
+        width: 300px;
+        height: 35px;
+        border-radius: 10px;
+        margin: 2px;
+        padding-left: 10px;
+      }
+
+      .login-button {
+        display: flex;
+       justify-content: center;
+        margin-bottom: 5px;
+        background-color: aqua;
+        font-size: 12px;
+        width: 200px;
+        height: 35px;
+        padding-left: 20px;
+
+        border-radius: 10px;
+      }
+      .login-button1 {
+        display: flex;
+        margin-bottom: 5px;
+        background-color: aqua;
+        font-size: 12px;
+        width: 200px;
+        height: 35px;
+        padding-left: 20px;
+justify-content: center;
+        border-radius: 10px;
+      }
+      .login-button2 {
+        display: flex;
+        
+        margin-bottom: 5px;
+        background-color: aqua;
+        font-size: 12px;
+        width: 200px;
+        height: 35px;
+        padding-left: 20px;
+justify-content: center;
+        border-radius: 10px;
+      }
+      .login-button3 {
+        display: flex;
+        margin-bottom: 5px;
+        background-color: aqua;
+        font-size: 12px;
+        width: 200px;
+        height: 35px;
+        padding-left: 20px;
+justify-content: center;
+        border-radius: 10px;
+      }
+
+      .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: auto;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <br />
+      <div style="position: absolute;left: 450px;height:200px">
+      <form
+        onsubmit="return Add(event)"
+        name="addForm"
+        class="form"
+      >
+        <input
+          name="value_1"
+          class="input-field"
+          type="number"
+          placeholder="Value 1"
+        />
+
+        <input
+        
+          name="value_2"
+          class="input-field"
+          type="number"
+          placeholder="Value 2"
+        /><br />
+      </div>
+      <div>
+        <span style="position: absolute; left: 500px; height: 0px">
+          <button type="submit" class="login-button">Add</button>
+          <button
+            type="submit"
+            onclick="Mul(event);"
+            class="login-button1"
+          >
+            mul
+          </button>
+        </span>
+        <span style="position: absolute; left: 700px; height: 0px">
+          <button
+            type="submit"
+            onclick="Div(event);"
+            class="login-button2"
+          >
+            div
+          </button>
+
+          <button
+            type="submit"
+            onclick="Sub(event);"
+            class="login-button3"
+          >
+            sub
+          </button>
+        </div>
+        </span>
+      </form>
+    </div>
+    <script>
+      const Add = (event) => {
+        event.preventDefault();
+        var value_1 = document.forms.addForm.value_1.value;
+        var value_2 = document.forms.addForm.value_2.value;
+        value_1 = parseFloat(value_1);
+        value_2 = parseFloat(value_2);
+
+        console.log(value_1 + value_2);
+      };
+
+      const Mul = (event) => {
+        event.preventDefault();
+        var value_1 = document.forms.addForm.value_1.value;
+        var value_2 = document.forms.addForm.value_2.value;
+        value_1 = parseFloat(value_1);
+        value_2 = parseFloat(value_2);
+
+        console.log(value_1 * value_2);
+      };
+      const Div = (event) => {
+        event.preventDefault();
+        var value_1 = document.forms.addForm.value_1.value;
+        var value_2 = document.forms.addForm.value_2.value;
+        value_1 = parseFloat(value_1);
+        value_2 = parseFloat(value_2);
+
+        console.log(value_1 / value_2);
+      };
+      const Sub = (event) => {
+        event.preventDefault();
+        var value_1 = document.forms.addForm.value_1.value;
+        var value_2 = document.forms.addForm.value_2.value;
+        value_1 = parseFloat(value_1);
+        value_2 = parseFloat(value_2);
+
+        console.log(value_1 - value_2);
+      };
+    </script>
+  </body>
+</html>

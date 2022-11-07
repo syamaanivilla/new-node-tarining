@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width ,initial-scale=1">
+        <style>
+.container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height:500px;
+    background-color: gray;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100%;
+}
+.p1{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-weight: bold;
+}
+.hh{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.item{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    width:100%;
+}
+.item2{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    width: 100%;
+      
+
+}
+.ss{
+    text-decoration:underline;
+    font-weight: bold;
+}
+
+.item3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-right: 20px;
+    
+}
+.image{
+    width:400px;
+    height:200px;
+   margin-right: 50px;
+ 
+
+}
+@media screen and (max-width:900px) {
+    .container{
+        flex-direction: column;
+        height: auto;
+        width: 100% !important;
+        background-color: aquamarine;
+    }
+
+    .item2{
+        flex-direction: column;
+        height: auto;
+        width: auto;
+    }
+    .item{
+        flex-direction: column;
+        height: auto;
+        width: auto;  
+    }
+    .image{
+        flex-direction: column;
+        height: auto;
+        width: 280px;
+    }
+    .item3{
+        flex-direction: column;
+        height: auto;
+        width: auto;
+    }
+}
+@media screen and (max-width:550px){
+    .image{
+            width:200px;
+            height: 200px;
+    }
+}
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="item">
+                
+                <span><h1 class="hh">MEAN STACK</h1>MongoDB is a non-relational document database that provides support for JSON-like storage. The MongoDB database has a flexible data model that enables you to store unstructured data, and it provides full indexing support, and replication with rich and intuitive APIs.   <span class="p1">
+                    <p>MONGO DB</p>
+                    <p>EXPRESS JS</p>
+                    <p>ANGULAR</p>
+                    <p>NODE JS</p>
+                    </span></span><br>
+              
+                
+
+            </div>
+            <div class="item2">
+<img class="image" src="https://www.nmttechnologies.com/images/mean-stack-development.png">
+            </div>
+            <div class="item3">
+                
+                
+                <span><h1 class="ss">why MEAN STACK ?</h1>Node.js (Node) is an open source development platform for executing JavaScript code server-side. Node is useful for developing applications that require a persistent connection from the browser to the server and is often used for real-time applications such as chat, news feeds and web push notifications.</span>
+            </div>
+        </div>
+    </body>
+</html>

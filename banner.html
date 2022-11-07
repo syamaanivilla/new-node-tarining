@@ -1,0 +1,125 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+
+      .container {
+        width: 100%;
+        height: 800px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-image: linear-gradient(-150deg, red, green, yellow);
+        padding-left: 50px;
+        padding-right: 50px;
+
+      }
+
+
+
+      .item {
+        width: 100%;
+      }
+
+      .container-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .image {
+        width: 200px;
+        height: 220px;
+        -webkit-box-reflect: below 2px
+          linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+      }
+
+
+      .image:hover {
+        /* transform: rotate(180deg); */
+        /* transform: scale(1.1, 1.1); */
+      }
+
+      .title {
+        font-size: 40px;
+        font-weight: 900;
+        box-shadow: 1px 1px 30px 2px red;
+        
+      }
+
+      @media screen and (max-width: 992px) {
+        .container {
+          flex-direction: column;
+          height: auto;
+        }
+
+        .image {
+          width: 180px;
+          height: 200px;
+          margin-bottom: 20px;
+        }
+        .item-container-3{
+          flex-direction: column;
+          height:auto; 
+        }
+      }
+      .item-container-3{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        padding-left: 50px;
+        padding-right: 100px;
+
+      }
+      .item2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:300px;
+        flex-wrap: wrap;
+        flex-basis: 160px;
+      }
+      .image{
+        width:400px ;
+        height: 400px;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">
+        <h1 class="title">I love MEAN Stack and JAVA</h1>
+        <p>
+          This establishes the main-axis, thus defining the direction flex items
+          are placed in the flex container. Flexbox is (aside from optional
+          wrapping) a single-direction layout concept. Think of flex items as
+          primarily laying out either in horizontal rows or vertical columns.
+        </p>
+      </div>
+      <div class="item container-2">
+        <img
+          class="image"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJjaNJId5B5fdORxlHwOHn6pMnVwteAozxvQ&usqp=CAU"
+        />
+      </div>
+
+      <div class ="item-container-3">
+        <p class ="item2">
+        MongoDB — document database<br>
+
+        Express(.js) — Node.js web framework<br>
+
+        Angular(.js) — a client-side JavaScript framework<br>
+
+        Node(.js) — the premier JavaScript web server
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

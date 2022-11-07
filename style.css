@@ -1,0 +1,18 @@
+.same:nth-child(even) {
+  color: blueviolet;
+}
+.same:nth-child(odd) {
+  color: olivedrab;
+}
+.same:nth-child(even):hover {
+  color: blue;
+}
+.same:nth-child(odd):hover {
+  color: red;
+}
+
+.google-image:hover {
+  margin-top: 50px;
+  margin-left: 50px;
+  background-color: aqua;
+}

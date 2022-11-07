@@ -1,0 +1,87 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./todo.css" />
+    <!-- CSS only -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-card">
+        <div class="input-container">
+          <input
+            id="task_id"
+            class="todo-input"
+            type="text"
+            placeholder="enter your new task"
+          />
+          <button onclick="addNewTask();" class="todo-button">add</button>
+        </div>
+
+        <div class="todo-container" id="task_element"></div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var todoTasks = [];
+      const addNewTask = () => {
+        var element = document.getElementById("task_id");
+        todoTasks.push(element.value);
+        console.log(todoTasks);
+
+        element.value = "";
+        finalHtml = "";
+
+        todoTasks.map((task, index) => {
+          finalHtml +=
+            `<div class="row">
+              <div class="col-sm-1">` +
+            (index + 1) +
+            `</div>
+              <div class="col-sm-8">`;
+          finalHtml +=
+            task +
+            `</div>
+              <div class="col-sm-3"><i onclick="deleteTask(` +
+            index +
+            ` )" class="fa-solid fa-trash icon-style"></i></div></div>`;
+        });
+        document.getElementById("task_element").innerHTML = finalHtml;
+      };
+      const deleteTask = (taskIndex) => {
+        var remainTask = [];
+        todoTasks.map((task, index) => {
+          if (index !== taskIndex) {
+            remainTask.push(task);
+          }
+        });
+
+        todoTasks = remainTask;
+        finalHtml = "";
+
+        todoTasks.map((task, index) => {
+          finalHtml +=
+            `<div class="row">
+      <div class="col-sm-1">` +
+            (index + 1) +
+            `</div>
+      <div class="col-sm-8">`;
+          finalHtml +=
+            task +
+            `</div>
+      <div class="col-sm-3"><i onclick="deleteTask(` +
+            index +
+            ` )" class="fa-solid fa-trash icon-style"></i></div></div>`;
+        });
+        document.getElementById("task_element").innerHTML = finalHtml;
+      };
+    </script>
+  </body>
+</html>
