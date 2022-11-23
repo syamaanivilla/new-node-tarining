@@ -172,3 +172,10 @@ body {
     width: auto;
   }
 }
+.forget {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 10px;
+  text-decoration: none;
+}

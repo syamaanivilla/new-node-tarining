@@ -86,6 +86,15 @@
             class="input-row-input"
           />
         </div>
+        <div class="input-row">
+          <label class="input-row-label"
+            >Enter gender</label
+          ><br />
+          <input id ="gender_id"
+            placeholder="enter full name"
+            class="input-row-input"
+          />
+        </div>
 
 
         <!--username and contact number-->
@@ -132,6 +141,7 @@ else{
   const userElement = document.getElementById("user_id");
   const fullnameElement = document.getElementById("fullname_id");
   const passElement = document.getElementById("pass_id");
+  const genderElement = document.getElementById("gender_id");
 
   var obj = {
     id:idElement.value,
@@ -139,7 +149,8 @@ else{
     username:userElement.value,
     password:passElement.value,
     email:emailElement.value,
-    fullname:fullnameElement.value
+    fullname:fullnameElement.value,
+    gender:genderElement.value
   }
  
   console.log(obj);

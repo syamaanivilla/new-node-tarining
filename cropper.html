@@ -84,6 +84,13 @@
     .img {
       max-width: 500px;
     }
+    .cropped {
+      position: absolute;
+      right: 530px;
+      top: 200px;
+      border-radius: 5px;
+      border: 1px solid black;
+    }
   </style>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/0.8.1/cropper.min.js"></script>
   <script>
@@ -97,6 +104,7 @@
       dwn = document.querySelector(".download"),
       upload = document.querySelector("#file-input"),
       cropper = "";
+
     upload.addEventListener("change", (e) => {
       console.log(e);
       const reader = new FileReader();
@@ -131,6 +139,7 @@
       dwn.classList.remove("hide");
       dwn.download = "imagename.png";
       dwn.setAttribute("href", imgSrc);
+      result.innerHTML = null;
     });
   </script>
 </html>
